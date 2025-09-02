@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600&display=swap');
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--jh-bg);
+  scroll-behavior: smooth;
+  text-align: center;
+  /* fuerza centrado global */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+
+p {
+  text-align: center;
+}
+
+
+:root {
+  --jh-brand: #0B2239;
+  --jh-accent: #F5C044;
+  --jh-bg: #F7F9FC;
+  --jh-dark: #0E0F12;
+  --jh-muted: #6B7280;
+}
+
+
+.bg-darkglass {
+  background: rgba(14, 15, 18, 0.9) !important;
+}
+
+
+.btn-accent {
+  background: var(--jh-accent) !important;
+  color: #1B1B1B !important;
+  border: none !important;
+  box-shadow: 0 6px 14px rgba(245, 192, 68, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.btn-accent:hover {
+  filter: brightness(0.95);
+  transform: translateY(-2px);
+}
+
+
+.badge-accent {
+  background: var(--jh-accent);
+  color: #1b1b1b;
+}
+
+
+.card-ghost {
+  background: rgba(255, 255, 255, 0.92);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card-ghost:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+
+.underline-accent {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-accent::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px;
+  width: 120px;
+  height: 8px;
+  background: var(--jh-accent);
+  border-radius: 999px;
+}
