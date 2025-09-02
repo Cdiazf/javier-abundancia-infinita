@@ -1,6 +1,6 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 
-const HERO_BG = "/banner.png";
+const HERO_BG = import.meta.env.BASE_URL + "/banner.png";
 
 export default function Hero() {
   return (
