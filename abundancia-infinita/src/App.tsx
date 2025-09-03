@@ -6,6 +6,7 @@ import MeditationsSection from "./components/sections/MeditationsSection";
 import EbookSection from "./components/sections/EbookSection";
 import StatsSection from "./components/StatsSection";
 import SiteFooter from "./components/SiteFooter";
+import MasterClassSection from "./components/sections/MasterClassSection";
 
 const LINKS: QuickLink[] = [
   { label: "MasterClass", href: "#masterclass" },
@@ -45,19 +46,7 @@ export default function App() {
 
       <StatsSection />
 
-      <section id="masterclass" className="py-5 bg-light">
-        <Container>
-          <h2 className="fw-bold mb-4 text-dark">MasterClass</h2>
-          <div className="ratio ratio-16x9 rounded-4 shadow-sm">
-            <iframe
-              src="https://www.youtube.com/embed/q9-R_lG3TpA"
-              title="MasterClass Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </Container>
-      </section>
+      <MasterClassSection />
 
       <MeditationsSection />
       <EbookSection />

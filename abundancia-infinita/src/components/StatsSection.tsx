@@ -18,7 +18,7 @@ function Counter({ end, duration = 2000 }: { end: number; duration?: number }) {
 
 export default function StatsSection() {
   return (
-    <section className="py-5 bg-white align-items-center">
+    <section className="py-5 bg-white ">
       <Container>
         <Row className="align-items-center">
           <Col md={6}>
